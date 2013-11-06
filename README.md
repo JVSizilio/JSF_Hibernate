@@ -1,0 +1,4 @@
+Core
+====
+
+Projeto Core
