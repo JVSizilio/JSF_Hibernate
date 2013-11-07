@@ -51,7 +51,7 @@ public class JPAFilter implements Filter{
 		 * <p>
 		 * O EntityManager armazenado dentro da requisição pelo filtro pode ser recuperado a qualquer momento
 		 * durante o processamento da requisição através do código:
-		 * 
+		 * <p>
 		 *	FacesContext fc = FacesContext.getCurrentInstance();
 		 *	ExternalContext ec = fc.getExternalContext();
 		 *	HttpServletRequest request = (HttpServletRequest) ec.getRequest();
@@ -73,10 +73,6 @@ public class JPAFilter implements Filter{
 			em.getTransaction().rollback();
 		} finally {
 			em.close();
-		}
-		
-		/**
-			
-		*/
+		}		
 	}	
 }
