@@ -35,5 +35,6 @@ public class ExemploDao {
 		Query query = this.Em.createQuery("Select x from ExemploBean x");
 		return query.getResultList();
 	}
-
+	
+	
 }
